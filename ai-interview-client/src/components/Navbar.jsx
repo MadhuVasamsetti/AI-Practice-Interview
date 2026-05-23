@@ -1,44 +1,35 @@
 import { Link } from "react-router-dom";
 
+import "../styles/navbar.css";
+
 function Navbar() {
   return (
-    <nav className="glass fixed top-0 left-0 w-full z-50 px-10 py-5 flex items-center justify-between">
-      
-      <h1 className="text-2xl font-bold text-white">
-        AI Interview
-      </h1>
+    <nav className="navbar">
 
-      <div className="flex items-center gap-8 text-white">
+      <Link
+  to="/"
+  className="logo"
+>
+  AI Interview
+</Link>
 
-        <Link
-          to="/"
-          className="hover:text-cyan-400 transition"
-        >
-          Home
+<div className="nav-links">
+
+        
+
+        <Link to="/login">
+          Login
         </Link>
 
         <Link
-          to="/dashboard"
-          className="hover:text-cyan-400 transition"
+          to="/register"
+          className="register-btn"
         >
-          Dashboard
-        </Link>
-
-        <Link
-          to="/analytics"
-          className="hover:text-cyan-400 transition"
-        >
-          Analytics
-        </Link>
-
-        <Link
-          to="/login"
-          className="primary-btn"
-        >
-          Get Started
+          Register
         </Link>
 
       </div>
+
     </nav>
   );
 }
