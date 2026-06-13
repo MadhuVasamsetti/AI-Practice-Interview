@@ -18,7 +18,7 @@ function About() {
           AI Interview is an intelligent interview
           preparation platform designed to help
           students and job seekers practice technical
-          and HR interviews in a realistic environment.
+          and HR interviews in a realistic environment
 
           Our AI asks role-based questions,
           listens to your spoken answers,
